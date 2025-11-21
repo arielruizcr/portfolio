@@ -113,7 +113,55 @@ To add custom CSS, edit `src/input.css` and use Tailwind's `@layer` directive:
 1. Get your site key from [Google reCAPTCHA Admin](https://www.google.com/recaptcha/admin)
 2. Replace `YOUR_SITE_KEY_HERE` in `index.html` with your actual site key
 
-## 🚢 Deployment
+## 🌐 GitHub Pages Deployment
+
+This project is configured for automatic deployment to GitHub Pages using GitHub Actions.
+
+### Automatic Deployment (Recommended)
+
+1. **Push your code to GitHub:**
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   git push -u origin main
+   ```
+
+2. **Enable GitHub Pages:**
+   - Go to your repository on GitHub
+   - Click **Settings** → **Pages**
+   - Under **Source**, select **GitHub Actions**
+   - The workflow will automatically deploy on every push to `main` or `master` branch
+
+3. **Your site will be available at:**
+   - `https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/`
+
+### Manual Deployment
+
+If you prefer to deploy manually:
+
+1. **Build the project:**
+   ```bash
+   npm run build
+   ```
+
+2. **Enable GitHub Pages:**
+   - Go to repository **Settings** → **Pages**
+   - Select **Deploy from a branch**
+   - Choose `main` or `master` branch
+   - Select `/ (root)` folder
+   - Click **Save**
+
+### Workflow Features
+
+- ✅ Automatic builds on push to main/master
+- ✅ Tailwind CSS compilation and minification
+- ✅ Optimized production-ready CSS
+- ✅ No manual build steps required
+
+## 🚢 Manual Deployment
 
 Before deploying:
 

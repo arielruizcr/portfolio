@@ -6,7 +6,9 @@ yarn.lock
 # Build outputs
 dist/
 build/
-assets/css/styles.css
+# Note: assets/css/styles.css is ignored locally but will be generated during CI/CD
+# Uncomment the line below if you want to commit the built CSS file
+# assets/css/styles.css
 
 # Environment variables
 .env

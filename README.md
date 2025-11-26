@@ -42,25 +42,27 @@ This generates an optimized, minified CSS file in `assets/css/styles.css`.
 
 ```
 WebPage/
-├── assets/
+├── src/
+│   ├── assets/
+│   │   └── images/
+│   │       └── svg/            # SVG image assets
+│   │           ├── logo-icon.svg
+│   │           ├── hero-illustration.svg
+│   │           ├── web-design-icon.svg
+│   │           ├── programming-icon.svg
+│   │           ├── consulting-icon.svg
+│   │           └── about-illustration.svg
 │   ├── css/
 │   │   └── styles.css          # Compiled CSS (generated - do not edit directly)
-│   ├── images/
-│   │   └── svg/                # SVG image assets
-│   │       ├── logo-icon.svg
-│   │       ├── hero-illustration.svg
-│   │       ├── web-design-icon.svg
-│   │       ├── programming-icon.svg
-│   │       ├── consulting-icon.svg
-│   │       └── about-illustration.svg
-│   └── js/
-│       └── script.js           # JavaScript functionality
-├── src/
-│   └── input.css              # Tailwind source file (edit this)
+│   ├── js/
+│   │   └── script.js           # JavaScript functionality
+│   └── input.css               # Tailwind source file (edit this)
 ├── index.html                  # Main HTML file
 ├── package.json                # Node.js dependencies and scripts
+├── package-lock.json           # Locked dependency versions
 ├── tailwind.config.js          # Tailwind CSS configuration
 ├── postcss.config.js           # PostCSS configuration
+├── DEPLOYMENT.md               # Deployment documentation
 └── README.md                   # This file
 ```
 
